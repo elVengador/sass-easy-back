@@ -1,0 +1,51 @@
+@mixin icon($url) {
+  width: 35px;
+  height: 35px;
+  display: inline-flex;
+  background: url($url) center;
+  background-repeat: no-repeat;
+}
+
+.footer {
+  border: 2px solid gold;
+  text-align: center;
+  background-color: var(--darkBlue);
+  color: var(--white);
+  padding: 2.5em 0;
+  &__logo {
+    padding-bottom: 1em;
+  }
+  &__social {
+    padding-bottom: 1em;
+    &__facebook {
+      @include icon("/static/images/icon-facebook.svg");
+    }
+    &__youtube {
+      @include icon("/static/images/icon-youtube.svg");
+    }
+    &__twitter {
+      @include icon("/static/images/icon-twitter.svg");
+    }
+    &__pinterest {
+      @include icon("/static/images/icon-pinterest.svg");
+    }
+    &__instagram {
+      @include icon("/static/images/icon-instagram.svg");
+    }
+  }
+  &__pages {
+    padding-bottom: 1em;
+    &__link {
+      padding-bottom: 1em;
+      display: block;
+      font-size: 0.8em;
+      text-decoration: none;
+      color: var(--lightGrayishBlue);
+    }
+  }
+  &__copyright {
+    padding-top: 1em;
+    font-size: 0.8em;
+    color: var(--grayishBlue);
+  }
+}

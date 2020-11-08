@@ -1,0 +1,196 @@
+:root {
+  --darkBlue: hsl(233, 26%, 24%);
+  --limeGreen: hsl(136, 65%, 51%);
+  --brightCyan: hsl(192, 70%, 51%);
+  --grayishBlue: hsl(233, 8%, 62%);
+  --lightGrayishBlue: hsl(220, 16%, 96%);
+  --veryLightGray: hsl(0, 0%, 98%);
+  --white: hsl(0, 0%, 100%);
+  --wraperSpace: 1.5em;
+  font-size: 18px;
+}
+
+body {
+  margin: 0;
+  border: 2px solid #ff9900;
+  font-family: "Public Sans", sans-serif;
+}
+
+header {
+  padding: 1.6em 1.5em;
+  display: flex;
+  justify-content: space-between;
+}
+
+.content {
+  font-size: 0.8em;
+  color: var(--grayishBlue);
+}
+
+.menu {
+  display: flex;
+  width: 40px;
+  background: url("../images/icon-hamburger.svg") no-repeat center;
+}
+
+.hero {
+  display: none;
+  padding-bottom: 5em;
+  border: 2px solid green;
+  text-align: center;
+  color: var(--darkBlue);
+}
+.hero__image {
+  height: 285px;
+  margin: 0 calc(-1 * var(--wraperSpace));
+  margin-bottom: 2em;
+  background: url("../images/image-mockups.png") center bottom no-repeat, url("../images/bg-intro-mobile.svg") center no-repeat;
+  background-size: 327px, cover;
+}
+.hero__title {
+  font-size: 2em;
+  font-weight: 300;
+}
+
+.why {
+  display: none;
+  border: 2px solid dodgerblue;
+  padding: 3em 0em;
+  text-align: center;
+  background: var(--veryLightGray);
+}
+.why__title {
+  font-size: 1.8em;
+  font-weight: 300;
+  color: var(--darkBlue);
+}
+.why__item__icon {
+  margin-top: 1em;
+}
+.why__item__title {
+  font-size: 1em;
+  font-weight: 300;
+  color: var(--darkBlue);
+}
+
+.latest-articles {
+  padding: 3em 0em;
+  text-align: center;
+}
+.latest-articles__grid {
+  display: grid;
+  row-gap: 2em;
+}
+.latest-articles__title {
+  font-size: 1.8em;
+  font-weight: 300;
+  color: var(--darkBlue);
+}
+.latest-articles__item {
+  text-align: left;
+  border-radius: 8px 8px 0px 0px;
+}
+.latest-articles__item-content {
+  margin: 1em var(--wraperSpace);
+}
+.latest-articles__item__image {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 8px 8px 0px 0px;
+}
+.latest-articles__item__author {
+  color: var(--grayishBlue);
+}
+.latest-articles__item__title {
+  color: var(--darkBlue);
+  font-size: 1em;
+  font-weight: 400;
+}
+.latest-articles__item__summary {
+  color: var(--grayishBlue);
+  font-size: 0.7em;
+}
+
+.footer {
+  border: 2px solid gold;
+  text-align: center;
+  background-color: var(--darkBlue);
+  color: var(--white);
+  padding: 2.5em 0;
+}
+.footer__logo {
+  padding-bottom: 1em;
+}
+.footer__social {
+  padding-bottom: 1em;
+}
+.footer__social__facebook {
+  width: 35px;
+  height: 35px;
+  display: inline-flex;
+  background: url("/static/images/icon-facebook.svg") center;
+  background-repeat: no-repeat;
+}
+.footer__social__youtube {
+  width: 35px;
+  height: 35px;
+  display: inline-flex;
+  background: url("/static/images/icon-youtube.svg") center;
+  background-repeat: no-repeat;
+}
+.footer__social__twitter {
+  width: 35px;
+  height: 35px;
+  display: inline-flex;
+  background: url("/static/images/icon-twitter.svg") center;
+  background-repeat: no-repeat;
+}
+.footer__social__pinterest {
+  width: 35px;
+  height: 35px;
+  display: inline-flex;
+  background: url("/static/images/icon-pinterest.svg") center;
+  background-repeat: no-repeat;
+}
+.footer__social__instagram {
+  width: 35px;
+  height: 35px;
+  display: inline-flex;
+  background: url("/static/images/icon-instagram.svg") center;
+  background-repeat: no-repeat;
+}
+.footer__pages {
+  padding-bottom: 1em;
+}
+.footer__pages__link {
+  padding-bottom: 1em;
+  display: block;
+  font-size: 0.8em;
+  text-decoration: none;
+  color: var(--lightGrayishBlue);
+}
+.footer__copyright {
+  padding-top: 1em;
+  font-size: 0.8em;
+  color: var(--grayishBlue);
+}
+
+.wrapper {
+  padding: 0em var(--wraperSpace);
+}
+
+.content {
+  margin-bottom: 2.5em;
+}
+
+.button {
+  border-radius: 25px;
+  border-width: 0;
+  padding: 0.8em 2.2em;
+  font-size: 0.9em;
+  font-weight: 600;
+  background-image: linear-gradient(to right, var(--limeGreen) 0%, var(--brightCyan) 100%);
+  color: white;
+}
+
+/*# sourceMappingURL=estilos.css.map */

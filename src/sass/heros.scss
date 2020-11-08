@@ -1,0 +1,19 @@
+.hero {
+  display: none;
+  padding-bottom: 5em;
+  border: 2px solid green;
+  text-align: center;
+  color: var(--darkBlue);
+  &__image {
+    height: 285px;
+    margin: 0 calc(-1 * var(--wraperSpace));
+    margin-bottom: 2em;
+    background: url("../images/image-mockups.png") center bottom no-repeat,
+      url("../images/bg-intro-mobile.svg") center no-repeat;
+    background-size: 327px, cover;
+  }
+  &__title {
+    font-size: 2em;
+    font-weight: 300;
+  }
+}

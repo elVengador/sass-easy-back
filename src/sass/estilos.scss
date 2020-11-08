@@ -1,0 +1,27 @@
+@use 'globals';
+@use 'menus';
+@use 'heros';
+@use 'whys';
+@use 'latest-articles';
+@use 'footer';
+
+.wrapper {
+  padding: 0em var(--wraperSpace);
+}
+.content {
+  @extend %content;
+  margin-bottom: 2.5em;
+}
+.button {
+  border-radius: 25px;
+  border-width: 0;
+  padding: 0.8em 2.2em;
+  font-size: 0.9em;
+  font-weight: 600;
+  background-image: linear-gradient(
+    to right,
+    var(--limeGreen) 0%,
+    var(--brightCyan) 100%
+  );
+  color: white;
+}

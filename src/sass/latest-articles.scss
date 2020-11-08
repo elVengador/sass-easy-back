@@ -1,0 +1,37 @@
+.latest-articles {
+  padding: 3em 0em;
+  text-align: center;
+  &__grid {
+    display: grid;
+    row-gap: 2em;
+  }
+  &__title {
+    font-size: 1.8em;
+    font-weight: 300;
+    color: var(--darkBlue);
+  }
+  &__item {
+    text-align: left;
+    border-radius: 8px 8px 0px 0px;
+    &-content {
+      margin: 1em var(--wraperSpace);
+    }
+    &__image {
+      width: 100%;
+      object-fit: cover;
+      border-radius: 8px 8px 0px 0px;
+    }
+    &__author {
+      color: var(--grayishBlue);
+    }
+    &__title {
+      color: var(--darkBlue);
+      font-size: 1em;
+      font-weight: 400;
+    }
+    &__summary {
+      color: var(--grayishBlue);
+      font-size: 0.7em;
+    }
+  }
+}

@@ -1,0 +1,22 @@
+.why {
+  display: none;
+  border: 2px solid dodgerblue;
+  padding: 3em 0em;
+  text-align: center;
+  background: var(--veryLightGray);
+  &__title {
+    font-size: 1.8em;
+    font-weight: 300;
+    color: var(--darkBlue);
+  }
+  &__item {
+    &__icon {
+      margin-top: 1em;
+    }
+    &__title {
+      font-size: 1em;
+      font-weight: 300;
+      color: var(--darkBlue);
+    }
+  }
+}
